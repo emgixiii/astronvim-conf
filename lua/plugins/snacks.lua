@@ -171,9 +171,7 @@ return {
     {
       "rebelot/heirline.nvim",
       optional = true,
-      opts = {
-        statuscolumn = nil,
-      },
+      opts = function(_, opts) opts.statuscolumn = nil end,
     },
   },
 }
